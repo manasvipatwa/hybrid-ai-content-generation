@@ -1,1 +1,10 @@
-image:  file: .gitpod.Dockerfiletasks:  - init: pip install -r requirements.txt  - command: python manage.py runserverports:  - port: 8000    onOpen: open-preview
+image:
+  file: .gitpod.Dockerfile
+
+tasks:
+  - init: pip install -r requirements.txt
+  - command: python manage.py runserver
+
+ports:
+  - port: 8000
+    onOpen: open-preview
